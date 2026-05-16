@@ -1,0 +1,14 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.main_text{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main_foto{
+    display: flex;
+    justify-content: flex-end;
+}
