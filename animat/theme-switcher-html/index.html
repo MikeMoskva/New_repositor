@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Theme Switcher | White / Black CSS Classes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-white">
+  <div class="card">
+    <h1>🎭 CSS Theme Toggle</h1>
+    <div class="sub">white ⇄ black · pure class switch</div>
+    <hr />
+    <button id="themeSwitcherBtn" class="toggle-btn">
+      <span class="btn-icon">🌗</span>
+      <span id="dynamicLabel">Switch to Black</span>
+    </button>
+    <div class="status-badge" id="themeStatus">
+      🌕 Light mode active (white)
+    </div>
+    <div class="footnote">
+      CSS defines both themes — JS only toggles classes
+    </div>
+  </div>
+
+   <script src="theme-switcher.js"></script>
+</body>
+</html>

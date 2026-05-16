@@ -1,0 +1,185 @@
+    /* ---------- GLOBAL RESET & BASE ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ----- WHITE THEME (default) ----- */
+    /* All white-mode styles are defined here */
+    body.theme-white {
+      background-color: #ffffff;
+      color: #1a1a2e;
+      transition: background-color 0.35s ease, color 0.3s ease;
+    }
+
+    /* card styling for white mode */
+    body.theme-white .card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.12);
+    }
+
+    body.theme-white .toggle-btn {
+      background: #1e1e2f;
+      color: white;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    body.theme-white .toggle-btn:hover {
+      background: #2d2d44;
+    }
+
+    body.theme-white .status-badge {
+      background: rgba(0, 0, 0, 0.06);
+      color: #1a1a2e;
+    }
+
+    body.theme-white h1 {
+      color: #0a0a1a;
+    }
+
+    body.theme-white .sub {
+      color: #2c2c3a;
+    }
+
+    /* ----- BLACK THEME ----- */
+    /* all black/dark mode styles defined here */
+    body.theme-black {
+      background-color: #000000;
+      color: #efefef;
+      transition: background-color 0.35s ease, color 0.3s ease;
+    }
+
+    body.theme-black .card {
+      background: rgba(18, 18, 28, 0.88);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.7);
+    }
+
+    body.theme-black .toggle-btn {
+      background: #f0f0f5;
+      color: #111;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    body.theme-black .toggle-btn:hover {
+      background: #ffffff;
+      color: #000;
+      transform: translateY(-2px);
+    }
+
+    body.theme-black .status-badge {
+      background: rgba(255, 255, 255, 0.12);
+      color: #f0f0f0;
+    }
+
+    body.theme-black h1 {
+      color: #ffffff;
+    }
+
+    body.theme-black .sub {
+      color: #cfcfdf;
+    }
+
+    /* ----- SHARED COMPONENT STYLES (layout, typography, button base) ----- */
+    body {
+      font-family: system-ui, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 1.5rem;
+    }
+
+    .card {
+      max-width: 550px;
+      width: 100%;
+      border-radius: 2.5rem;
+      padding: 2rem 2rem 2.2rem;
+      text-align: center;
+      transition: background 0.3s ease, border 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.6rem;
+      transition: color 0.2s ease;
+    }
+
+    .sub {
+      font-size: 1rem;
+      opacity: 0.85;
+      margin-bottom: 1.5rem;
+      transition: color 0.2s ease;
+    }
+
+    hr {
+      width: 60px;
+      margin: 0.75rem auto 1.25rem auto;
+      border: 0;
+      height: 2px;
+      background: currentColor;
+      opacity: 0.25;
+      border-radius: 5px;
+    }
+
+    .toggle-btn {
+      border: none;
+      font-size: 1.25rem;
+      font-weight: 600;
+      padding: 0.8rem 2rem;
+      border-radius: 60px;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s, box-shadow 0.2s, color 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      letter-spacing: 0.3px;
+    }
+
+    .toggle-btn:active {
+      transform: translateY(2px);
+    }
+
+    .btn-icon {
+      font-size: 1.35rem;
+      display: inline-block;
+    }
+
+    .status-badge {
+      margin-top: 1.8rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      display: inline-block;
+      padding: 0.45rem 1.3rem;
+      border-radius: 40px;
+      transition: background 0.25s ease, color 0.25s ease;
+      backdrop-filter: blur(4px);
+    }
+
+    /* small footnote */
+    .footnote {
+      margin-top: 1.6rem;
+      font-size: 0.75rem;
+      opacity: 0.6;
+      transition: opacity 0.2s;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 1.5rem;
+      }
+      h1 {
+        font-size: 1.9rem;
+      }
+      .toggle-btn {
+        font-size: 1rem;
+        padding: 0.7rem 1.5rem;
+      }
+    }
