@@ -1,14 +1,18 @@
-h1 {
+
+
+body{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-
-.main_text{
-    display: flex;
-    justify-content: flex-start;
+    
+.card{
+    text-align: center;
 }
-
-.main_foto{
-    display: flex;
-    justify-content: flex-end;
+    
+.activity{
+    text-align: left;
+    line-height: 1; 
+    margin: 0;
 }
+    
