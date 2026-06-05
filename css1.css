@@ -4,7 +4,6 @@
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: lightyellow;
     padding: 1.5rem;
 }
@@ -27,8 +26,41 @@ p{
 }
     
 .activity{
-    text-align: left;
-    line-height: 1; 
-    margin: 0;
+    background-color: lightslategray;
+    display: grid;
+    grid-template-areas: 
+    "b b b a a"
+    "b b b a a"
+    "b b b m m"
+    "s d d m m"
+    "s d d m m";
+    height: 20rem;
+}
+
+.basketball{
+    grid-area: b;
+    background-color: orange;
 }
     
+.actor_game{
+    grid-area: a;
+    background-color: green;
+}
+
+.drawing{
+
+    grid-area: d;
+    background-color: blueviolet;
+}
+
+.swimming{
+
+    grid-area: s;
+    background-color: blue;
+}
+
+.music{
+
+    grid-area: m;
+    background-color: red;
+}
