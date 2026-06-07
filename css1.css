@@ -26,41 +26,170 @@ p{
 }
     
 .activity{
-    background-color: lightslategray;
     display: grid;
     grid-template-areas: 
-    "b b b a a"
-    "b b b a a"
-    "b b b m m"
-    "s d d m m"
-    "s d d m m";
+    "b b b b a a a"
+    "b b b b a a a"
+    "b b b b m m m"
+    "s s d d m m m"
+    "s s d d m m m";
     height: 20rem;
+    gap: 5px;
 }
 
 .basketball{
     grid-area: b;
-    background-color: orange;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
 }
-    
+
+.bg_basketball{
+    position: absolute;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhG_UlK587YrZy8ipYyMEPpbnY5T4hi-yoA&s");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: blur(7px);
+    transition: filter 0.3s ease;
+}
+
+.basketball_text{
+    position: absolute;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 20px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.basketball:hover{
+    transform: scale(1.1);
+}
+
+.basketball:hover .bg_basketball{
+    filter: blur(0);
+}
+
+.basketball:hover .basketball_text{
+    opacity: 0;
+}
+
 .actor_game{
     grid-area: a;
-    background-color: green;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.bg_actor{
+    position: absolute;
+    background-image: url("https://media.kudago.com/thumbs/xl/images/rich_editor/ea/69/ea6955c79b0edfce30e319c21c95953d.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: blur(7px);
+    transition: filter 0.3s ease;
+}
+
+.actor_text{
+    position: absolute;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 20px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.actor_game:hover{
+    transform: scale(1.1);
+}    
+
+.actor_game:hover .bg_actor{
+    filter: blur(0);
+}
+
+.actor_game:hover .actor_text{
+    opacity: 0;
 }
 
 .drawing{
-
     grid-area: d;
-    background-color: blueviolet;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.bg_drawing{
+    position: absolute;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/049/351/879/non_2x/theatre-kids-rehearsal-hamlet-performance-cartoon-flat-illustration-young-actors-on-stage-theater-2d-characters-colorful-background-extracurricular-drama-club-scene-storytelling-image-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: blur(7px);
+    transition: filter 0.3s ease;
+}
+
+.drawing_text{
+    position: absolute;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 20px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.drawing:hover{
+    transform: scale(1.1);
+}
+
+.drawing:hover .bg_drawing{
+    filter: blur(0);
+}
+
+.drawing:hover .drawing{
+    opacity: 0;
 }
 
 .swimming{
-
     grid-area: s;
     background-color: blue;
+    transition: 0.5s ease-in-out;
+}
+
+.swimming:hover{
+    transform: scale(1.1);
 }
 
 .music{
-
     grid-area: m;
     background-color: red;
+    transition: 0.5s ease-in-out;
 }
+
+.music:hover{
+    transform: scale(1.1);
+}
+    
+
+
+
+
+
+
+
