@@ -65,11 +65,12 @@ p{
     color: white;
     font-size: 20px;
     opacity: 1;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
 }
 
 .basketball:hover{
     transform: scale(1.1);
+    z-index: 1;
 }
 
 .basketball:hover .bg_basketball{
@@ -80,11 +81,12 @@ p{
     opacity: 0;
 }
 
+
 .actor_game{
     grid-area: a;
     position: relative;
     overflow: hidden;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .bg_actor{
@@ -123,16 +125,17 @@ p{
     opacity: 0;
 }
 
+
 .drawing{
     grid-area: d;
     position: relative;
     overflow: hidden;
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .bg_drawing{
     position: absolute;
-    background-image: url("https://static.vecteezy.com/system/resources/previews/049/351/879/non_2x/theatre-kids-rehearsal-hamlet-performance-cartoon-flat-illustration-young-actors-on-stage-theater-2d-characters-colorful-background-extracurricular-drama-club-scene-storytelling-image-vector.jpg");
+    background-image: url("https://sketchbook.store/wp-content/uploads/2018/07/Gorodskoy-sketching.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -151,7 +154,7 @@ p{
     color: white;
     font-size: 20px;
     opacity: 1;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.3s ease;
 }
 
 .drawing:hover{
@@ -162,31 +165,97 @@ p{
     filter: blur(0);
 }
 
-.drawing:hover .drawing{
+.drawing:hover .drawing_text{
     opacity: 0;
 }
 
+
 .swimming{
     grid-area: s;
-    background-color: blue;
-    transition: 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.bg_swimming{
+    position: absolute;
+    background-image: url("https://static-ilovesupersport.servicecdn.ru/store/uploads/pages/markdownimage/1818/image/preview-d8411455e38cff8d1fdcb9b9190cd2a1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: blur(7px);
+    transition: filter 0.3s ease;
+}
+
+.swimming_text{
+    position: absolute;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 20px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
 .swimming:hover{
     transform: scale(1.1);
 }
 
+.swimming:hover .bg_swimming{
+    filter: blur(0);
+}
+
+.swimming:hover .swimming_text{
+    opacity: 0;
+}
+
+
 .music{
     grid-area: m;
-    background-color: red;
-    transition: 0.5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.bg_music{
+    position: absolute;
+    background-image: url("https://n1s1.hsmedia.ru/61/04/31/6104314ad3b305a39c0dcc61fd2afb0d/680x470_0xc0a8392b_7102594171428426893.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    filter: blur(7px);
+    transition: filter 0.3s ease;
+}
+
+.music_text{
+    position: absolute;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 20px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
 .music:hover{
     transform: scale(1.1);
 }
     
+.music:hover .bg_music{
+    filter: blur(0);
+}
 
+.music:hover .music_text{
+    opacity: 0;
+}
 
 
 
