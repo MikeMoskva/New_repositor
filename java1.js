@@ -27,17 +27,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 })
 
-/* document.addEventListener('DOMContentLoaded', function() {
-    const card = document.querySelector('.card');
 
-    if (card) {
-        document.addEventListener('mousemove', function(e) {
-            let dx = e.pageX - window.innerWidth / 2;
-            let dy = e.pageY - window.innerHeight / 2;
-            let angleX = 15 * dx / (window.innerWidth / 2);
-            let angleY = 15 * dy / (window.innerHeight / 2);
-            block.style.transform = `perspective(400px) rotateX(${angleY}deg) rotateY(${angleX}deg)`;
-        }
-    }
-})*/
 
